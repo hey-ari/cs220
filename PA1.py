@@ -92,13 +92,15 @@ def set_equals(s1, s2):
     s2 = burner
 
     equal = True
-    # if length isn't equel, returns False
+    # if length isn't equal, returns False
     if len(s1) == len(s2):
         for item in s1:
             if item not in s2:
                 equal = False
+                break
+    else:
+        equal = False
     return equal
-
 
 def set_difference(s1, s2):
     """Return the set difference of s1 and s2"""
