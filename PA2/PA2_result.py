@@ -35,7 +35,6 @@ your code.
  
 '''
 
-
 import sys
 
 # p implies q
@@ -71,8 +70,8 @@ def nand(p, q):
 # not p and not q
 
 def npANDnq(p,q):
-
-    return not(p) and not(q)
+     
+         return not(p) and not(q)
 
 # not ( p or q)
 
@@ -113,6 +112,7 @@ def run(f):
   print("  False,True : ", f(False,True))
   print("  False,False: ", f(False,False))
   print()
+
       
 #provided
 if __name__ == "__main__":
@@ -138,4 +138,3 @@ if __name__ == "__main__":
   if(f1 == "tt"):
     print(make_tt_ins(int(sys.argv[2])))
     
-
